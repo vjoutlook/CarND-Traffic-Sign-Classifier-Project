@@ -1,4 +1,4 @@
-# **Traffic Sign Recognition** 
+# **Traffic Sign Recognition**
 
 ## Writeup
 
@@ -19,7 +19,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: (./examples/visualization.jpg) "Visualization"
+[image1]: (./examples/visualization.jpg)
 [image2]: (./examples/grayscale.jpg) "Grayscaling"
 [image3]: (./examples/random_noise.jpg) "Random Noise"
 [image4]: (./examples/placeholder.png) "Traffic Sign 1"
@@ -36,7 +36,7 @@ The goals / steps of this project are the following:
 
 #### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
 
-You're reading it! and here is a link to my [project code](https://github.com/vjoutlook/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+You're reading it! and here is a link to my [project code](Traffic_Sign_Classifier.ipynb)
 
 ### Data Set Summary & Exploration
 
@@ -55,7 +55,7 @@ signs data set:
 
 Here is an exploratory visualization of the data set. It is a bar chart showing distribution of 43 different types of traffic signs.
 
-![traffic_sign_data_barchart](https://github.com/vjoutlook/CarND-Traffic-Sign-Classifier-Project/blob/master/traffic_sign_data_barchart.png)
+![traffic_sign_data_barchart](traffic_sign_data_barchart.png)
 
 ### Design and Test a Model Architecture
 
@@ -67,9 +67,9 @@ I used normalization of image by subtracting 128 and dividing with 128.  I also 
 
 My final model consisted of the following layers:
 
-| Layer         		|     Description	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| Input         		| 32x32x3 RGB image   							| 
+| Layer         		|     Description	        					|
+|:---------------------:|:---------------------------------------------:|
+| Input         		| 32x32x3 RGB image   							|
 | Convolution        	| 1x1 stride, same padding, outputs 28x28x6 	|
 | RELU					|												|
 | Max pooling	      	| 2x2 stride,  outputs 14x14x6  				|
@@ -84,7 +84,7 @@ My final model consisted of the following layers:
 | Fully connected   	| outputs 43  									|
 |						|												|
 |						|												|
- 
+
 
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
@@ -97,7 +97,7 @@ The batch size used is 60 and epochs used is 20.  Initially I used batch size of
 
 My final model results were:
 * training set accuracy of 0.989
-* validation set accuracy of 0.903 
+* validation set accuracy of 0.903
 * test set accuracy of 0.910
 
 Le-Net architecture was used to train the model.  Traffic data is complex data and it justifies use of Le-Net architecture that has 13 layers.  Looking at the final output, I was able to achieve training accuracy of 98.9%, validation accuracy of 90.3% and test accuracy of 91% that is very good.  
@@ -109,17 +109,17 @@ Le-Net architecture was used to train the model.  Traffic data is complex data a
 
 Here are six German traffic signs that I found on the web(I used three category, two images each):
 
-![Speed limit (70km/h) image 1](https://github.com/vjoutlook/CarND-Traffic-Sign-Classifier-Project/blob/master/externalimages/4_00000.png) 
+![Speed limit (70km/h) image 1](externalimages/4_00000.png)
 
-![Speed limit (70km/h) image 2](https://github.com/vjoutlook/CarND-Traffic-Sign-Classifier-Project/blob/master/externalimages/4_00017.png)
+![Speed limit (70km/h) image 2](externalimages/4_00017.png)
 
-![No entry image 1](https://github.com/vjoutlook/CarND-Traffic-Sign-Classifier-Project/blob/master/externalimages/17_00000.png)
+![No entry image 1](externalimages/17_00000.png)
 
-![No entry image 1](https://github.com/vjoutlook/CarND-Traffic-Sign-Classifier-Project/blob/master/externalimages/17_00020.png) 
+![No entry image 1](externalimages/17_00020.png)
 
-![Road narrows on the right image 1](https://github.com/vjoutlook/CarND-Traffic-Sign-Classifier-Project/blob/master/externalimages/24_00002.png)
+![Road narrows on the right image 1](externalimages/24_00002.png)
 
-![Road narrows on the right image 1](https://github.com/vjoutlook/CarND-Traffic-Sign-Classifier-Project/blob/master/externalimages/24_00010.png)
+![Road narrows on the right image 1](externalimages/24_00010.png)
 
 I ran it few times and in one of the run, the first image was not recognized accurately.  And it make sense as the image is very blurry.  With subsequent runs, I got 100% accuracy on those images.
 
@@ -127,14 +127,14 @@ I ran it few times and in one of the run, the first image was not recognized acc
 
 Here are the results of the prediction:
 
-| Image			            |     Prediction	        				| 
-|:---------------------:    |:-----------------------------------------:| 
-| Speed limit (70km/h)      | Speed limit (70km/h)						| 
+| Image			            |     Prediction	        				|
+|:---------------------:    |:-----------------------------------------:|
+| Speed limit (70km/h)      | Speed limit (70km/h)						|
 | No entry      			| No entry 									|
 | Road narrows on the right	| Road narrows on the right					|
 
 
-The model was able to correctly guess 6 of the 6 traffic signs, which gives an accuracy of 100%. 
+The model was able to correctly guess 6 of the 6 traffic signs, which gives an accuracy of 100%.
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
@@ -142,16 +142,14 @@ The code for making predictions on my final model is located in the 11th cell of
 
 For the first image, the model is relatively sure that this is a speed limit sign (probability of 100%), and the image does contain a speed limit sign. The top five soft max probabilities were (two images were used in each category and probabilities are shown in pair here)
 
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| .999 and 1.00			| Speed limit (70km/h)  						| 
+| Probability         	|     Prediction	        					|
+|:---------------------:|:---------------------------------------------:|
+| .999 and 1.00			| Speed limit (70km/h)  						|
 | .974 and .999			| No entry 										|
 | .981 and .999			| Road narrows on the right						|
 
 
-For the second and third images as shown, the model predicted it accurately despite of them being blurred. 
+For the second and third images as shown, the model predicted it accurately despite of them being blurred.
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
-
-
