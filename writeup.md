@@ -36,7 +36,7 @@ The goals / steps of this project are the following:
 
 #### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
 
-You're reading it! and here is a link to my [project code](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+You're reading it! and here is a link to my [project code](https://github.com/vjoutlook/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
 
 ### Data Set Summary & Exploration
 
@@ -55,7 +55,7 @@ signs data set:
 
 Here is an exploratory visualization of the data set. It is a bar chart showing distribution of 43 different types of traffic signs.
 
-![traffic_sign_data_barchart][./traffic_sign_data_barchart.png]
+![traffic_sign_data_barchart][https://github.com/vjoutlook/CarND-Traffic-Sign-Classifier-Project/blob/master/traffic_sign_data_barchart.png]
 
 ### Design and Test a Model Architecture
 
@@ -107,9 +107,9 @@ Le-Net architecture was used to train the model.  Traffic data is complex data a
 
 Here are six German traffic signs that I found on the web(I used three category, two images each):
 
-![Speed limit (70km/h) image 1][./externalimages/4_00000.ppm] ![Speed limit (70km/h) image 2][./externalimages/4_00017.ppm] 
-![No entry image 1][./externalimages/17_00000.ppm] ![No entry image 1][./externalimages/17_00020.ppm] 
-![Road narrows on the right image 1][./externalimages/24_00002.ppm] ![Road narrows on the right image 1][./externalimages/24_00010.ppm]
+![Speed limit (70km/h) image 1][https://github.com/vjoutlook/CarND-Traffic-Sign-Classifier-Project/blob/master/externalimages/4_00000.ppm] ![Speed limit (70km/h) image 2][https://github.com/vjoutlook/CarND-Traffic-Sign-Classifier-Project/blob/master/externalimages/4_00017.ppm] 
+![No entry image 1][https://github.com/vjoutlook/CarND-Traffic-Sign-Classifier-Project/blob/master/externalimages/17_00000.ppm] ![No entry image 1][https://github.com/vjoutlook/CarND-Traffic-Sign-Classifier-Project/blob/master/externalimages/17_00020.ppm] 
+![Road narrows on the right image 1][https://github.com/vjoutlook/CarND-Traffic-Sign-Classifier-Project/blob/master/externalimages/24_00002.ppm] ![Road narrows on the right image 1][https://github.com/vjoutlook/CarND-Traffic-Sign-Classifier-Project/blob/master/externalimages/24_00010.ppm]
 
 I ran it few times and in one of the run, the first image was not recognized accurately.  And it make sense as the image is very blurry.  With subsequent runs, I got 100% accuracy on those images.
 
