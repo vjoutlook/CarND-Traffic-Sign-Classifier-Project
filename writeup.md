@@ -115,7 +115,7 @@ Here are six German traffic signs that I found on the web(I used three category,
 
 ![No entry image 1](https://github.com/vjoutlook/CarND-Traffic-Sign-Classifier-Project/blob/master/externalimages/17_00020.ppm) 
 
-![Road narrows on the right image 1)(https://github.com/vjoutlook/CarND-Traffic-Sign-Classifier-Project/blob/master/externalimages/24_00002.ppm)
+![Road narrows on the right image 1](https://github.com/vjoutlook/CarND-Traffic-Sign-Classifier-Project/blob/master/externalimages/24_00002.ppm)
 
 ![Road narrows on the right image 1](https://github.com/vjoutlook/CarND-Traffic-Sign-Classifier-Project/blob/master/externalimages/24_00010.ppm)
 
