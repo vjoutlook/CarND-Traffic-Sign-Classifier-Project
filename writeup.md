@@ -77,8 +77,10 @@ My final model consisted of the following layers:
 | RELU					|												|
 | Max pooling	      	| 2x2 stride,  outputs 5x5x16   		 		|
 | Flattening    	    | outputs 400  									|
-| Fully connected RELU	| outputs 120  									|
-| Fully connected RELU	| outputs 84  									|
+| Fully connected     	| outputs 120  									|
+| RELU					|												|
+| Fully connected     	| outputs 84  									|
+| RELU					|												|
 | Fully connected   	| outputs 43  									|
 |						|												|
 |						|												|
